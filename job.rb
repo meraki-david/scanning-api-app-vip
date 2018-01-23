@@ -34,6 +34,10 @@ class LocationData
       logger.warn "got post for event that we're not interested in: #{map['type']}"
       return
     end
+    if map['type'] == 'BluetoothDevicesSeen'
+      logger.warn "got bluetooth stuff"
+      logger.warn "data: #{map['data']}"
+    end
     map['data']['observations'].each do |c|
       loc = c['location']
       next if loc == nil
