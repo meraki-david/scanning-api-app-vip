@@ -27,7 +27,8 @@
       'BluetoothDevicesSeen': 'RoyalBlue'
     },
     vip_list = [
-      "a4:77:33:5e:2f:dc"
+      "a4:77:33:5e:2f:dc",
+      "44:61:32:90:03:d8"
     ];
       
 
