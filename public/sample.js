@@ -47,6 +47,14 @@
     }
   }
 
+  function get_icon_for_client(client) {
+    if (vip_list.indexOf(client.mac) !== -1) {
+      return markerImageTypes['BluetoothDevicesSeen'];
+    } else {
+      return markerImageTypes[client.eventType];
+    }
+  }
+
   // Plots the location and uncertainty for a single MAC address
   function track(client) {
     clearAll();
@@ -80,9 +88,9 @@
       clientMarker.setPosition(pos);
       // if it's a vip then branch for blue else >>
       if (vip_list.indexOf(client.mac) !== -1) {
-        clientMarker.setIcon(markerImageTypes['BluetoothDevicesSeen']);
+        clientMarker.setIcon(get_icon_for_client(client));
       } else {
-        clientMarker.setIcon(markerImageTypes[client.eventType]);
+        clientMarker.setIcon(get_icon_for_client(client));
       }
       
       clientUncertaintyCircle = new google.maps.Circle({
@@ -106,7 +114,7 @@
       position: new google.maps.LatLng(client.lat, client.lng),
       map: map,
       mac: client.mac,
-      icon: markerImageTypes[client.eventType]
+      icon: get_icon_for_client(client)
     });
     google.maps.event.addListener(m, 'click', function () {
       infoWindow.setContent("<div>" + client.mac + "</div> (<a class='client-filter' href='#' data-mac='" +
