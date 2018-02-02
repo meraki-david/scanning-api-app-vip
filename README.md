@@ -1,6 +1,8 @@
-# Cisco Meraki CMX API demo app
+# Cisco Meraki CMX API demo app + VIP highlighting
 
-This application show you how to get started using the [Cisco Meraki](https://meraki.cisco.com/) CMX API. CMX (Connected Mobile Experiences) is Cisco’s location analytics and engagement platform, and it’s integrated into Cisco Meraki wireless products. To learn more about what you can do with CMX, see the [Cisco Meraki CMX site](https://meraki.cisco.com/solutions/cmx).
+This application is a small addition to this app: https://github.com/meraki/scanning-api-app.
+
+This version has a static list of VIP mac's and will highlight them in blue as opposed to the usual green.  The color should probably be changed if you also intend to process BLE data.
 
 ## Table of contents
 
