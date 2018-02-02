@@ -25,7 +25,10 @@
     uncertaintyCircleColors = {
       'DevicesSeen': 'LightGreen',
       'BluetoothDevicesSeen': 'RoyalBlue'
-    };
+    },
+    vip_list = [
+      "a4:77:33:5e:2f:dc"
+    ];
       
 
   // Removes all markers
@@ -74,7 +77,13 @@
       map.setCenter(pos);
       clientMarker.setMap(map);
       clientMarker.setPosition(pos);
-      clientMarker.setIcon(markerImageTypes[client.eventType]);
+      // if it's a vip then branch for blue else >>
+      if (vip_list.indexOf(client.mac) !== -1) {
+        clientMarker.setIcon(markerImageTypes['BluetoothDevicesSeen']);
+      } else {
+        clientMarker.setIcon(markerImageTypes[client.eventType]);
+      }
+      
       clientUncertaintyCircle = new google.maps.Circle({
         map: map,
         center: pos,
