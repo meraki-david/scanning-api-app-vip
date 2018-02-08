@@ -8,8 +8,8 @@
     lastMac = "",                               // The last requested MAC to follow
     infoWindow = new google.maps.InfoWindow(),  // The marker tooltip
     lookupFrequency = 5000,                    // Frequency of the lookup (in milliseconds)
-    markerImage = new google.maps.MarkerImage('vip.png',
-      new google.maps.Size(15, 15),
+    markerImage = new google.maps.MarkerImage('circle-pink.png',
+      new google.maps.Size(56, 56),
       new google.maps.Point(0, 0),
       new google.maps.Point(4.5, 4.5)
     ),
