@@ -9,7 +9,7 @@
     infoWindow = new google.maps.InfoWindow(),  // The marker tooltip
     lookupFrequency = 5000,                    // Frequency of the lookup (in milliseconds)
     markerImage = new google.maps.MarkerImage('circle-pink.png',
-      new google.maps.Size(56, 56),
+      new google.maps.Size(28, 28),
       new google.maps.Point(0, 0),
       new google.maps.Point(4.5, 4.5)
     ),
@@ -29,7 +29,9 @@
     vip_list = [
       "3c:2e:f9:72:b1:c9", // Laurel
       "dc:0c:5c:6d:13:86", // Pete's Iphone
-      "34:f3:9a:2e:00:4a"  // Pete's Laptop
+      "34:f3:9a:2e:00:4a",  // Pete's Laptop
+      "44:85:00:46:7a:bc", // test client
+      "fc:db:b3:f1:6e:35" //test client
     ];
       
 
