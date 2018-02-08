@@ -191,7 +191,7 @@
   // This is called after the DOM is loaded, so we can safely bind all the
   // listeners here.
   function initialize() {
-    var center = new google.maps.LatLng(39.48891, -119.79299);
+    var center = new google.maps.LatLng(39.48951, -119.79299);
     var mapOptions = {
       zoom: 20,
       center: center
