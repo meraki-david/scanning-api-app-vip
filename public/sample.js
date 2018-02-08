@@ -8,7 +8,7 @@
     lastMac = "",                               // The last requested MAC to follow
     infoWindow = new google.maps.InfoWindow(),  // The marker tooltip
     lookupFrequency = 5000,                    // Frequency of the lookup (in milliseconds)
-    markerImage = new google.maps.MarkerImage('blue_circle.png',
+    markerImage = new google.maps.MarkerImage('vip.png',
       new google.maps.Size(15, 15),
       new google.maps.Point(0, 0),
       new google.maps.Point(4.5, 4.5)
@@ -24,11 +24,12 @@
     },
     uncertaintyCircleColors = {
       'DevicesSeen': 'LightGreen',
-      'BluetoothDevicesSeen': 'RoyalBlue'
+      'BluetoothDevicesSeen': '#ff69b4'
     },
     vip_list = [
-      "a4:77:33:5e:2f:dc",
-      "44:61:32:90:03:d8"
+      "3c:2e:f9:72:b1:c9", // Laurel
+      "dc:0c:5c:6d:13:86", // Pete's Iphone
+      "34:f3:9a:2e:00:4a"  // Pete's Laptop
     ];
       
 
