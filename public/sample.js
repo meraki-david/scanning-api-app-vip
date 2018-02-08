@@ -8,8 +8,8 @@
     lastMac = "",                               // The last requested MAC to follow
     infoWindow = new google.maps.InfoWindow(),  // The marker tooltip
     lookupFrequency = 5000,                    // Frequency of the lookup (in milliseconds)
-    markerImage = new google.maps.MarkerImage('circle-pink.png',
-      new google.maps.Size(28, 28),
+    markerImage = new google.maps.MarkerImage('pink_circle.png',
+      new google.maps.Size(20, 20),
       new google.maps.Point(0, 0),
       new google.maps.Point(4.5, 4.5)
     ),
@@ -31,7 +31,12 @@
       "dc:0c:5c:6d:13:86", // Pete's Iphone
       "34:f3:9a:2e:00:4a",  // Pete's Laptop
       "44:85:00:46:7a:bc", // test client
-      "fc:db:b3:f1:6e:35" //test client
+      "fc:db:b3:f1:6e:35", //test client,
+      "88:71:e5:5e:5f:32",
+      "e8:2a:ea:ba:45:c8",
+      "80:00:0b:33:94:9c",
+      "b8:8a:60:6e:03:07"
+
     ];
       
 
